@@ -23,13 +23,3 @@ const lightbox = new SimpleLightbox(".gallery a", {
   captionPosition: "bottom",
   docClose: true,
 });
-
-// Open the lightbox when an image is clicked
-galleryList.addEventListener("click", (event) => {
-  event.preventDefault();
-  const clickedElement = event.target;
-
-  if (clickedElement.classList.contains("gallery__image")) {
-    lightbox.open();
-  }
-});
